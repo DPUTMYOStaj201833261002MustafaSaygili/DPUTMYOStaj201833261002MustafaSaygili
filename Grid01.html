@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.item1 { grid-area: İnternet; }
+.item2 { grid-area: donanım; }
+.item3 { grid-area: network; }
+.item4 { grid-area: sunucu; }
+.item5 { grid-area: switch; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'İnternet İnternet İnternet İnternet İnternet İnternet'
+    'donanım network network network sunucu sunucu'
+    'donanım switch switch switch switch switch';
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Bilgisayar</h1>
+
+<p>Çökecek windows bilgisayarda durmaz.</p>
+
+<div class="grid-container">
+  <div class="item1">İnternet</div>
+  <div class="item2">donanım</div>
+  <div class="item3">network</div>  
+  <div class="item4">sunucu</div>
+  <div class="item5">switch</div>
+</div>
+
+</body>
+</html>

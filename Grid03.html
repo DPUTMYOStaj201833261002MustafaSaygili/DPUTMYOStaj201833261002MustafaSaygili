@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+    table {
+        width: 502px;
+        height: 300px;
+    }
+ 
+    table,
+    td {
+        border: 1px solid black;
+    }
+</style>
+ <title>table_responsive</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<style>
+	.container{
+		margin:0 auto;
+		width:80%;
+		overflow:auto;
+	}
+	table.gridtable {
+        margin:0 auto;
+        width:95%;
+        overflow:auto;
+        font-family: helvetica,arial,sans-serif;
+        font-size:14px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #F6B4A5;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+    }
+	/* Large tablet  */
+	@media only screen and (min-width : 768px)  and (max-width : 1024px) {
+	    #container{
+			width:95%;
+		}
+      	table.gridtable {
+          width:100%;
+          font-size:13px;
+		}
+		table.gridtable th {
+          background-color: #A5DDF6;
+		}
+	}
+	/* Small tablet  */
+	@media only screen and (min-width : 569px)  and (max-width : 767px) {
+	    #container{
+			width:95%;
+		}
+      	table.gridtable {
+          width:100%;
+          font-size:12px;
+		}
+		table.gridtable th {
+          background-color: #89DDB0;
+		}		
+	}
+	/* Smartphone  */
+	@media only screen and (min-width : 240px)  and (max-width : 568px) {
+	    #container{
+			width:100%;
+		}
+      	table.gridtable {
+          width:100%;
+		}		
+		table thead {
+          display: none;
+		}
+		table tr {
+          display: block;
+          margin-top: 5px;
+          padding-bottom:5px;
+          border-bottom: 2px solid #FF5733;
+		}
+		table td {
+          display: block;
+          text-align: left;
+          font-size: 13px;
+          border-radius:5px;
+          margin-bottom:1px;
+          min-height: 14px
+        }
+		table td:before {
+          content: attr(colname);
+          float: left;
+          font-weight: bold;
+        }
+	}
+	
+	</style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>AD SOYAD</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>			
+        </thead>
+        
+            <tr>
+                <td><h1>Liste</h1><p>bilgisayar</p><p>internet</p><p>donanım</p><p>yazılım</p></td>
+				<td>Bilgisayar Teknolojisi ve Bilişim Sistemleri, bilgisayar ve sağladığı avantajların diğer sektörlere uyarlanması, sektörün sahip olduğu sorunları çözerek kullanılan her türlü cihazın, ağların, yazılım dillerinin ve veritabanlarının incelenmesi ve kullanılmak üzere eğitimi verilmekte olan akademik bir disiplindir.  </p></td>
+			    <td><img src="pc.jpg" alt="pc" height="150" width="100" /></a></td>				
+				<tr><td>201833261002</td></tr>
+				
+			</tr>
+   
+    </table>
+</body>
+</html>
