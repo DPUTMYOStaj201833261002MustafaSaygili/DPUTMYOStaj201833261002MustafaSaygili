@@ -1,0 +1,63 @@
+/*Grid ile oluşturulan satılar*/
+.item1 { grid-area: header; }
+.item2 { grid-area: homepage; }
+.item3 { grid-area: education; }
+.item4 { grid-area: experience; }
+.item5 { grid-area: targets; }
+.item6 { grid-area: programs; }
+.item7 { grid-area: other; }
+.item8 { grid-area: main; }
+.item9 { grid-area: info; }
+.item10 { grid-area: footer; }
+.item11 { grid-area: profile; }
+.item12 { grid-area: info1; }
+.item13 { grid-area: info2; }
+/*Oluştrulan gridin arkaplan rengi vs ayaları yapılan kısım*/
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+/*Oluşan grid yapsının 513 px ten küçük olduğu zaman görünecek kısım*/
+@media screen and (min-width: 513px) {
+	div{
+grid-template-areas:
+    'header header header header header header'
+    'homepage education experience targets programs other'
+    'info2 info2 info2 info2 info2 info2'; }
+}
+/*Oluşan grid yapsının 513 px ten büyük olduğu zaman görünecek kısım*/
+@media screen and (max-width: 513px) {
+ 	div	 {
+  grid-template-areas:
+	'header'
+	'homepage'
+	'education'
+	'experience'
+	'targets'
+	'programs'
+	'other'
+	'info2'
+  }}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+}
+a {
+     text-decoration: none;
+    }
+a:hover{ 
+color:red; 
+text-decoration:none; 
+}
+button {
+width:150px;
+height:50px;
+font-size:20px;
+}
+button:hover{
+color:red;
+}
